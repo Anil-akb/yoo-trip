@@ -1,0 +1,88 @@
+"use client"
+import React from 'react';
+
+
+const HotelCard = () => {
+
+
+    const bookHandler = () => {
+       
+   }
+
+  return (
+    <section className="hotel-card-wrapper h-300 w-200 mx-auto bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 transform hover:scale-102 relative">
+      <div className="hotel-card grid grid-cols-3 w-full h-full">
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">Hotel:</div>
+          <div className="val text-2xl font-bold">raghua</div>
+        </div>
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">City:</div>
+          <div className="val text-2xl font-bold">puri</div>
+        </div>
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">Ratings:</div>
+          <div className="val text-2xl font-bold">5/10</div>
+        </div>
+      </div>
+      <div className="hotel-card grid grid-cols-3 w-full h-full">
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">Check In:</div>
+          <div className="date">
+            <div className="flex flex-col items-start">
+              <span className="text-2xl font-bold">
+                {/* {date.format(new Date(hotel?.check_in), 'D ')} */}
+              </span>
+              <p className="text-sm">
+                {/* {date.format(new Date(hotel?.check_in), `MMM'YY,`)} */}
+              </p>
+              <p className="text-sm">
+                {/* {date.format(new Date(hotel?.check_in), 'dddd')} */}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">Check Out:</div>
+          <div className="date">
+            <div className="flex flex-col items-start">
+              <span className="text-2xl font-bold">
+                {/* {date.format(new Date(hotel?.check_out), 'D ')} */}
+              </span>
+              <p className="text-sm">
+                {/* {date.format(new Date(hotel?.check_out), `MMM'YY,`)} */}
+              </p>
+              <p className="text-sm">
+                {/* {date.format(new Date(hotel?.check_out), 'dddd')} */}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">Price:</div>
+          <div className="val text-2xl font-bold">
+            ₹ 200/night
+          </div>
+        </div>
+      </div>
+      <div className="hotel-card grid grid-cols-3 w-full h-full">
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">Room Type:</div>
+          <div className="val text-2xl font-bold">delux</div>
+        </div>
+        <div className="sec">
+          <div className="text-sm font-medium text-gray-600 mb-2">Guests:</div>
+          <div className="val text-2xl font-bold">1</div>
+        </div>
+      </div>
+      <button
+        onClick={bookHandler}
+        className="book-now absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-15px px-50px py-8 bg-blue-500 text-white rounded-full transition-transform duration-300 font-bold text-lg cursor-pointer hover:bg-blue-600"
+      >
+        Book Now
+      </button>
+    </section>
+  );
+};
+
+export default HotelCard;
