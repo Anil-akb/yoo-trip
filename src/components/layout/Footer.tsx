@@ -5,7 +5,7 @@ type Props = {};
 const Footter = (props: Props) => {
   return (
     <>
-      <div className="flex  mt-6">
+      <div className="flex mt-10">
         <header className="bg-zinc-800 w-full flex-col justify-center items-center px-6 py-3 max-md:max-w-full max-md:px-5">
           <div className="flex items-start justify-between gap-5 mt-8 px-2 max-md:flex-wrap">
             <div className="flex">
