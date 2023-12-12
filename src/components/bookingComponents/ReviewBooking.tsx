@@ -149,7 +149,7 @@ const ReviewBooking = (props: Props) => {
                 </h1>
               </div>
             </div>
-            <div className="border p-4 mt-3 flex rounded-md shadow-md justify-center transition hover:bg-red-600  bg-[#EF0107]">
+            <div className="border p-4  flex rounded-md shadow-md justify-center transition hover:bg-red-600  bg-[#EF0107]  sticky top-64 mt-4">
               <button className="text-2xl text-white font-bold">Pay Now</button>
             </div>
           </div>

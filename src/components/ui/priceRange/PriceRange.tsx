@@ -9,8 +9,8 @@ export default function PriceRange() {
       minValue={0}
       maxValue={1000}
       defaultValue={[100, 500]}
-      formatOptions={{ style: "currency", currency: "USD" }}
-      className="max-w-md"
+      formatOptions={{ style: "currency", currency: "INR" }}
+      className="max-w-md "
     />
   );
 }

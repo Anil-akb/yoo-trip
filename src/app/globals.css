@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
 
-:root {
-  font-family: 'Poppins', sans-serif;
-}
 ::-webkit-scrollbar {
   height: 1px;
   width: 2px;
@@ -39,7 +35,4 @@
   }
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-   
-}
+
