@@ -4,6 +4,7 @@ import Parking from "@/components/assets/car.png";
 import Wifi from "@/components/assets/wifi.png";
 import Star from "@/components/assets/star-2.png"
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {};
 
@@ -52,9 +53,9 @@ const HotelListingBox = (props: Props) => {
             </p>
           </div>
           <div className="flex items-center ml-auto space-x-4">
-            <button className="bg-red-500 text-white p-3 rounded-md">
+            <Link href="hotel/1" className="bg-red-500 text-white p-3 rounded-md">
               See Details
-            </button>
+            </Link>
             <button className="bg-red-500 text-white p-3 rounded-md">
               Book Now
             </button>
