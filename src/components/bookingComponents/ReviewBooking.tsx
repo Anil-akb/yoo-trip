@@ -119,7 +119,7 @@ const ReviewBooking = (props: Props) => {
             {/* <div className="border-2 mt-9 border-green-600"></div> */}
           </div>
           <div className="col-span-1 ml-8  ">
-            <div className="border flex shadow-xl rounded-md mt-1 sticky top-0 justify-between p-6 ">
+            <div className="border flex shadow-xl rounded-md mt-1 sticky top-14 justify-between p-6 ">
               <div className="flex flex-col gap-4">
                 <h1 className="font-bold text-2xl">Price </h1>
                 <h1>1 Room 2 Guests</h1>
@@ -149,7 +149,7 @@ const ReviewBooking = (props: Props) => {
                 </h1>
               </div>
             </div>
-            <div className="border p-4  flex rounded-md shadow-md justify-center transition hover:bg-red-600  bg-[#EF0107]  sticky top-64 mt-4">
+            <div className="border p-4  flex rounded-md shadow-md justify-center transition hover:bg-red-600  bg-[#EF0107]  sticky top-80 mt-4">
               <button className="text-2xl text-white font-bold">Pay Now</button>
             </div>
           </div>
