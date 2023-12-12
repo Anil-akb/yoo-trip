@@ -27,13 +27,13 @@ export default function HomeSection() {
           India
         </span>
       </h1>
-      <div className="gap-2 grid grid-cols-2 mx-44 rounded-xl shadow-2xl p-14 mt-4 sm:grid-cols-3">
+      <div className="gap-2 grid grid-cols-2 mx-44   rounded-xl shadow-2xl p-14 mt-4 sm:grid-cols-3">
         {images.map((item, index) => (
           <Card shadow="sm" key={index}>
-            <CardBody className="overflow-visible p-0">
+            <CardBody className=" p-0 ">
               <Image
                 alt={item.title}
-                className=" object- h-[240px]"
+                className=" h-[240px] "
                 src={item.img}
               />
             </CardBody>
