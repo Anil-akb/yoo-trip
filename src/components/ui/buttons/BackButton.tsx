@@ -17,7 +17,7 @@ const BackButton = () => {
     <div>
       {/* Back Arrow and Label */}
       <div className="flex items-center mb-4">
-        <button onClick={handleGoBack} className="mr-2">
+        <button onClick={handleGoBack} className="mr-2 flex items-center">
           {/* Back Arrow Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -33,9 +33,9 @@ const BackButton = () => {
               d="M15 19l-7-7 7-7"
             />
           </svg>
+        <span className="text-lg ml-2  text-red-500 font-semibold">Modify My Booking</span>
         </button>
         {/* Label */}
-        <span className="text-lg text-red-500 font-semibold">Modify My Booking</span>
       </div>
 
       
