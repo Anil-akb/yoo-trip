@@ -87,7 +87,7 @@ const HotelDetailsCard = () => {
                         <span className="text-lg font-bold text-gray-800">{payableAmount}</span>
                     </div>
                     <div className="flex justify-end mt-8 mb-4">
-                        <button className="bg-red-500 text-white px-4 py-2 rounded shadow-md hover:bg-blue-600">
+                        <button className="bg-red-500 text-white px-4 py-2 rounded shadow-md hover:bg-red-700">
                             {buttonText}
                         </button>
                     </div>
