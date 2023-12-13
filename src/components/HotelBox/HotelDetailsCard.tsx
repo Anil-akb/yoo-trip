@@ -30,7 +30,7 @@ const HotelDetailsCard = () => {
     }
 
     return (
-        <div className="bg-white shadow-md rounded overflow-hidden max-w-2xl mx-auto">
+        <div className="bg-white shadow-md rounded overflow-hidden max-w-2xl mx-auto border">
             <div className="flex flex-col">
                 <div className='flex justify-between m-4'>
                     <div className="">
@@ -49,6 +49,7 @@ const HotelDetailsCard = () => {
 
                     </div>
                 </div>
+
                 <div className="px-6 py-4">
 
                     <div className="flex items-center mb-6">
@@ -67,6 +68,8 @@ const HotelDetailsCard = () => {
                             {bookingDateFrom} - {bookingDateTo}
                         </span>
                     </div>
+                    <hr className="my-3 border-gray-200 mb-4" />
+
                     <div className="flex items-center justify-between mb-6">
                         <span className="text-gray-600 mr-2">Room Price for 1 Night X 1 Guest:</span>
                         <span className="text-lg  text-gray-800">{totalPrice}</span>
@@ -79,11 +82,11 @@ const HotelDetailsCard = () => {
                         <span className="text-gray-600 mr-2">59% Coupon Discount:</span>
                         <span className="text-sm  text-gray-500">-{couponDiscount}</span>
                     </div>
-                    <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center justify-between ">
                         <span className="text-gray-600 mr-2">Payable Amount:</span>
                         <span className="text-lg font-bold text-gray-800">{payableAmount}</span>
                     </div>
-                    <div className="flex justify-end mb-6">
+                    <div className="flex justify-end mt-8 mb-4">
                         <button className="bg-red-500 text-white px-4 py-2 rounded shadow-md hover:bg-blue-600">
                             {buttonText}
                         </button>
