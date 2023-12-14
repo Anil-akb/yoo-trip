@@ -7,7 +7,7 @@ const SignUpPage: React.FC = () => {
   return (
     <div className="flex ">
       {/* Image Section */}
-      <div className="w-[67%] h-screen">
+      <div className="w-[67%] h-screen sm:hidden lg:block">
         <Image src={LoginImg} alt={"Login"} className="" />
       </div>
 

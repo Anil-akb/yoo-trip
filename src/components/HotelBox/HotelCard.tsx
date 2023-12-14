@@ -8,15 +8,15 @@ import HeroImage from "../assets/hotel-1.jpg";
 const HotelCard = () => {
   return (
     <>
-      <div>
+      <div className="sm:hidden md:block lg:block">
         <Image
           src={HeroImage}
           className="w-full object-cover h-[360px] opacity-90 "
           alt="Picture of the author"
         />
       </div>
-      <section className="border-2 top-2/2 left-1/2 absolute transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-4">
-        <div className="flex justify-center items-center gap-7">
+      <section className="border-2 lg:top-2/2 left-1/2 absolute transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl lg:p-10 sm:p-0">
+        <div className="lg:flex justify-center sm:flex-row items-center lg:gap-7">
           {/* Search Box Section */}
           <div className="rounded-md border-2">
             <input
