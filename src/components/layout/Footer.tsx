@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import img from '../assets/TRIP-2.png'
 
 type Props = {};
 
@@ -10,7 +12,8 @@ const Footter = (props: Props) => {
           <div className="flex items-start justify-between gap-5 mt-8 px-2 max-md:flex-wrap">
             <div className="flex">
               <div className="text-white text-lg md:text-xl  leading-6">
-                Trip Swift Logo
+              <Image src={img} width={170} height={20} alt="Logo" />
+
               </div>
             </div>
 

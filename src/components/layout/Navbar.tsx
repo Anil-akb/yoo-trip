@@ -6,6 +6,7 @@ import Home from "@/components/assets/modern-house.png";
 import Trip from "@/components/assets/business-trip.png";
 import User from "@/components/assets/user.png";
 import Image from "next/image";
+import Logo from "../assets/TRIP-1.png";
 import { Menu, X } from "lucide-react";
 
 type Props = {};
@@ -26,8 +27,8 @@ const Navbar = (props: Props) => {
       <div className="flex items-center h-full p-4 justify-between px-4 rounded-lg bg-opacity-40">
         <div className="flex items-center gap-10">
           <Link href={"/"}>
-            <div className="w-[70px]">
-              <h1>LOGO</h1>
+            <div className="  w-[70px]">
+              <Image src={Logo} width={200} height={100} alt="Logo" />
             </div>
           </Link>
         </div>
