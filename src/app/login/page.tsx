@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import LoginImg from "../../components/assets/login.jpg";
 import Link from "next/link";
+import { login } from "@/api/auth";
 
-const SignUpPage: React.FC = () => {
+type LoginData = {
+  email: string;
+  password: string;
+};
+
+const Login: React.FC = () => {
+  const [values, setValues] = useState<{ email: string; password: string }>({
+    email: "",
+    password: "",
+  });
+  
+  const handelSubmit = () =>{
+    login(values)
+    .then(async(res)=>{
+      if(res){
+        console.log("login successfull")
+      }
+    })
+    .catch((error)=>{
+      console.log("the err is ",error)
+    })
+  }
   return (
     <div className="flex ">
       {/* Image Section */}
@@ -104,4 +126,4 @@ const SignUpPage: React.FC = () => {
   );
 };
 
-export default SignUpPage;
+export default Login;
